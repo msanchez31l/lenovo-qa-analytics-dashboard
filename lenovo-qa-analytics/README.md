@@ -64,3 +64,13 @@ Use the **Dark / Light** toggle in the dashboard header. The setting persists in
 - No guarantee of Done/Closed six-month transition filtering unless the agent has already enforced it.
 
 For automatic corporate reporting, use a company-approved internal endpoint or storage and an authenticated frontend; do not use a public GitHub Pages JSON asset.
+
+## Schedule local Jira agent (Argentina)
+
+From Windows PowerShell in the repository checkout:
+
+```powershell
+.\lenovo-qa-analytics\scripts\install-jira-refresh.ps1 -AgentPath "C:\code\lenovo-qa-status-agent"
+```
+
+This registers Windows Task Scheduler jobs at **06:00, 12:00, 18:00** in the PC's **local time zone**. Set Windows to Argentina Standard Time if those times should follow Buenos Aires time. The computer must be on and the corporate Jira SSO session must still be valid. This has **not** been executed on your PC; it is a setup script. The schedule runs the existing agent's `npm run report`, not a remote dashboard refresh. It does not transfer corporate data to the public site.
