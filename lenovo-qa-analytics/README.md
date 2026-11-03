@@ -74,3 +74,28 @@ From Windows PowerShell in the repository checkout:
 ```
 
 This registers Windows Task Scheduler jobs at **06:00, 12:00, 18:00** in the PC's **local time zone**. Set Windows to Argentina Standard Time if those times should follow Buenos Aires time. The computer must be on and the corporate Jira SSO session must still be valid. This has **not** been executed on your PC; it is a setup script. The schedule runs the existing agent's `npm run report`, not a remote dashboard refresh. It does not transfer corporate data to the public site.
+
+## Recommended: fully local private dashboard with automatic Jira refresh
+
+The reporting agent runs under your existing Windows/Lenovo SSO session. The dashboard runs on **127.0.0.1**, not the public Pages URL, so Jira issue data is never uploaded to GitHub.
+
+Prerequisites: the existing agent at `C:\code\lenovo-qa-status-agent`, working `npm run report`, Node.js 20+, valid `.auth/jira.json`, and a Windows user permitted to create scheduled tasks.
+
+From a local checkout of this GitHub repository:
+
+```powershell
+# 1. Register 3 daily Jira refresh jobs:
+.\lenovo-qa-analytics\scripts\install-jira-refresh.ps1 -AgentPath "C:\code\lenovo-qa-status-agent"
+
+# 2. Trigger the first refresh now (so you don't wait for the next scheduled time):
+Start-ScheduledTask -TaskName "Lenovo QA Jira Refresh 12:00"
+
+# 3. Start private dashboard (keep this terminal open):
+.\lenovo-qa-analytics\scripts\start-private-dashboard.ps1
+```
+
+Open: **http://127.0.0.1:4173/lenovo-qa-analytics-dashboard/**
+
+The local agent writes its JSON into `reports/status-*.json`; the scheduled job normalizes the latest output to `%LOCALAPPDATA%\LenovoQAStatusAgent\qa-dashboard-report.json`. The private dashboard reads that file via a loopback-only HTTP server and polls every 5 minutes. The browser never sends the report to GitHub.
+
+**Important limitations:** These tasks have not been installed or tested on your Windows machine. Jobs use the Windows machine's local timezone; ensure it is set to Argentina if required. The computer must remain on; tasks may fail if Jira SSO expires, if the PC cannot access VPN/Jira, or if the scheduled task account cannot use the existing session. A last good report remains visible when a later refresh fails; verify timestamps and Windows Task Scheduler history. The public GitHub Pages site stays in synthetic demo mode unless you manually import an approved JSON. Local server is intended only for this PC; no team-wide access is provided.
