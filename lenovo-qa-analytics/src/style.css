@@ -25,3 +25,5 @@
 :root[data-theme="dark"] .recharts-cartesian-grid line{stroke:#35445a}
 :root[data-theme="dark"] .recharts-text{fill:#aebdd0}
 :root[data-theme="dark"] .recharts-default-tooltip{background:#1d2a3e!important;border-color:#3d506c!important;color:#e8eef9!important}
+
+.localStatus{display:flex;align-items:center;gap:8px;padding:11px 15px;background:#e8f7ef;border:1px solid #9bd6b4;border-radius:7px;color:#12623b;font-size:12px;font-weight:700;margin-bottom:14px}:root[data-theme="dark"] .localStatus{background:#173a2c;border-color:#32775b;color:#9ee0ba}
