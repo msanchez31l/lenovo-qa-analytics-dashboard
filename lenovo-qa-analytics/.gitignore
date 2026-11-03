@@ -4,3 +4,11 @@ dist/
 *.log
 reports/
 .auth/
+
+# Private dashboard credentials and reports
+.env.*
+!.env.example
+*.pem
+*.key
+qa-dashboard-report.json
+private-report*.json
