@@ -30,8 +30,16 @@ foreach($time in @('06:00','12:00','18:00')){
  $action=New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $argument
  $trigger=New-ScheduledTaskTrigger -Daily -At $time
  $settings=New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Minutes 45)
- Register-ScheduledTask -TaskName ("Lenovo QA Jira Refresh "+$time) -Action $action -Trigger $trigger -Settings $settings -Description 'Private Jira QA status report and local dashboard JSON' -Force | Out-Null
- Write-Host "Registered $time"
+ $taskName = "Lenovo QA Jira Refresh " + $time.Replace(':','')
+ try {
+  Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Settings $settings -Description 'Private Jira QA status report and local dashboard JSON' -Force -ErrorAction Stop | Out-Null
+  $registered = Get-ScheduledTask -TaskName $taskName -ErrorAction Stop
+  if (!$registered) { throw "Task not found after registration" }
+  Write-Host "Verified: $taskName (local time $time)"
+ } catch {
+  throw "Failed to register task $taskName : $($_.Exception.Message)"
+ }
 }
 Write-Host "Report destination: $private\qa-dashboard-report.json"
+Write-Host "Run now: Start-ScheduledTask -TaskName 'Lenovo QA Jira Refresh 1200'"
 Write-Host "Test manually: & powershell.exe $argument"
