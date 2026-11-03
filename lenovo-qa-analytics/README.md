@@ -33,3 +33,34 @@ Also supports agent-style nested user/project/status objects, with arrays of Jir
 **Security:** Never commit real Lenovo issue data, SSO cookies, passwords, webhooks, or tokens. Import on a public externally hosted page only if company policy authorizes use. Data is kept in the browser's current tab and disappears on refresh.
 
 **Metric caveat:** counts mean issues matching owner/status filters, not personal productivity or actual ticket-close attribution; Done/Closed six-month selection comes from the source report.
+
+## Real Jira data — local agent bridge (private, manual)
+
+The static website never authenticates to Jira. Continue running the existing local QA Status Reporting Agent, which uses corporate SSO and produces a JSON report.
+
+1. Run the agent locally in its own project (e.g. `npm run report`).
+2. Identify the JSON output file it generated.
+3. From a local checkout of this dashboard repository, run:
+
+```powershell
+node .\lenovo-qa-analytics\scripts\normalize-agent-report.mjs "C:\path\to\agent-output.json" "C:\private\qa-dashboard-report.json"
+```
+
+4. Open the hosted dashboard and select **Import JSON**, then choose `C:\private\qa-dashboard-report.json`.
+
+The bridge accepts normalized `entries`, a flat `issues` array with Jira fields, or nested engineer/project/status counts. Because the actual local agent's JSON schema is not in this repository, inspect its output before treating the bridge as validated against your environment. Issue-level sorting, searching, and date filters require individual tickets with `key`, `summary`, and `updated`; aggregate-only reports cannot provide them.
+
+**Never upload real Jira reports to this public repository, commit them as demo data, or deploy them as site assets.** Imported files are read by the browser only. The Google Fonts CSS loaded by the page is an external asset request; use an approved internal hosting environment if company policy forbids using corporate data in a public-hosted application.
+
+## Appearance
+
+Use the **Dark / Light** toggle in the dashboard header. The setting persists in local browser storage and does not contain report data.
+
+## What is not connected
+
+- No live Jira API or Teams webhook runs from GitHub Pages.
+- No unattended refresh of real corporate data.
+- No shared team database or authenticated access.
+- No guarantee of Done/Closed six-month transition filtering unless the agent has already enforced it.
+
+For automatic corporate reporting, use a company-approved internal endpoint or storage and an authenticated frontend; do not use a public GitHub Pages JSON asset.
