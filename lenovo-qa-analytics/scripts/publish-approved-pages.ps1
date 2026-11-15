@@ -12,7 +12,7 @@ $branch=(git branch --show-current).Trim()
 if ($branch -ne 'main') { throw "Publishing requires local main branch; currently $branch" }
 $dirty=git status --porcelain
 if ($dirty -match '(?m)^(?!\?\? lenovo-qa-analytics/public/data/approved-report.json$)') { throw 'Unexpected uncommitted files; stop before publishing' }
-git add -- 'lenovo-qa-analytics/public/data/approved-report.json'
+git add -f -- 'lenovo-qa-analytics/public/data/approved-report.json'
 if ($LASTEXITCODE -ne 0) { throw 'git add failed' }
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) { Write-Host 'No report changes'; exit 0 }
