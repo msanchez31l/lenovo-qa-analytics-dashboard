@@ -7,3 +7,15 @@ test('rejects invalid issue key',()=>{const x=input();x.entries[0].tickets[0].ke
 test('rejects absent tickets array',()=>{const x=input();delete x.entries[0].tickets;assert.throws(()=>sanitize(x))});
 
 test('preserves issue with missing updated date without inventing timestamp',()=>{const x=input();x.entries[0].tickets[0].updated='';const result=sanitize(x);assert.equal(result.entries[0].tickets[0].updated,null);assert.equal(result.entries[0].tickets[0].key,'EPM-1');assert.equal(result.entries[0].counts.qa,1)});
+
+test('maps every observed Jira status without dropping tickets',()=>{
+ const mapping=[['Closed','closed'],['Done','done'],['Review','review'],['Internal QA','qa'],['In Progress','inProgress'],['To Do','toDo']];
+ for(const [status,bucket] of mapping){
+  const x=input();x.entries[0].tickets[0].status=status;
+  x.entries[0].counts={ [bucket]:1 };
+  const result=sanitize(x);
+  assert.equal(result.entries[0].tickets.length,1);
+  assert.equal(result.entries[0].tickets[0].status,({qa:'QA',review:'Review',inProgress:'In Progress',toDo:'To Do',done:'Done',closed:'Closed'})[bucket]);
+  assert.equal(result.entries[0].counts[bucket],1);
+ }
+});
