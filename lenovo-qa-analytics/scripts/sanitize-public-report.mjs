@@ -12,7 +12,7 @@ const date=s=>typeof s==='string'&&Number.isFinite(Date.parse(s))?new Date(s).to
 function sanitizeTicket(raw,owner,project,status){
  if(!raw||typeof raw!=='object'||!issueKey.test(raw.key||''))throw Error('Invalid issue key');
  const updated=date(raw.updated||raw.fields?.updated||raw.created||raw.fields?.created);
- if(!updated)throw Error('Issue missing valid updated date: '+raw.key);
+ if(raw.updated && !updated)throw Error('Issue has invalid updated date: '+raw.key);
  return {key:raw.key,owner,project,status,updated};
 }
 export function sanitize(raw){
