@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
 const statuses=['qa','review','inProgress','toDo','done','closed'];
 const labels={qa:'QA',review:'Review',inProgress:'In Progress',toDo:'To Do',done:'Done',closed:'Closed'};
 const canonical=s=>String(s).toLowerCase().replace(/[^a-z]/g,'');
@@ -66,11 +68,11 @@ export function sanitize(raw){
  if(Buffer.byteLength(serialized)>6*1024*1024)throw Error('Output too large');
  return output;
 }
-if(process.argv[1]&&import.meta.url===new URL('file://'+process.argv[1].replace(/\\/g,'/')).href){
+if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href){
  const [input,output]=process.argv.slice(2);
  if(!input||!output)throw Error('Usage: node sanitize-public-report.mjs input.json output.json');
  const value=sanitize(JSON.parse(fs.readFileSync(input,'utf8')));
- fs.mkdirSync(new URL('.',new URL('file://'+output.replace(/\\/g,'/'))),{recursive:true});
+ fs.mkdirSync(path.dirname(path.resolve(output)),{recursive:true});
  fs.writeFileSync(output,JSON.stringify(value,null,2)+'\n',{flag:'w'});
  console.log('Sanitized '+value.entries.length+' entries; SHA256 '+crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));
 }
