@@ -5,7 +5,7 @@ import {pathToFileURL} from 'node:url';
 const statuses=['qa','review','inProgress','toDo','done','closed'];
 const labels={qa:'QA',review:'Review',inProgress:'In Progress',toDo:'To Do',done:'Done',closed:'Closed'};
 const canonical=s=>String(s).toLowerCase().replace(/[^a-z]/g,'');
-const bucket=s=>statuses.find(x=>canonical(x)===canonical(s))||(canonical(s)==='qatesting'?'qa':null);
+const bucket=s=>statuses.find(x=>canonical(x)===canonical(s))||(['qatesting','internalqa'].includes(canonical(s))?'qa':null);
 const issueKey=/^[A-Z][A-Z0-9_]*-[0-9]+$/;
 const safeString=(s,max)=>typeof s==='string'&&s.length>0&&s.length<=max&&!/[<>\x00-\x1f]/.test(s);
 const date=s=>typeof s==='string'&&Number.isFinite(Date.parse(s))?new Date(s).toISOString():null;
