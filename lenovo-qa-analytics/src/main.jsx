@@ -19,7 +19,12 @@ if(Array.isArray(report.entries)){if(report.entries.length>500)throw Error('Too 
 else {for(const [name,prjs] of Object.entries(report)){if(['capturedAt','generatedAt','metadata','totals','summary','teamTotals','users'].includes(name))continue;if(!prjs||typeof prjs!=='object'||Array.isArray(prjs))continue;for(const [project,group] of Object.entries(prjs)){if(!group||typeof group!=='object'||Array.isArray(group))continue;const counts=empty(),tickets=[];for(const [key,value] of Object.entries(group)){const bucket=bucketFor(key);if(!bucket)continue;if(Array.isArray(value)){if(value.length>25000)throw Error('Too many tickets');counts[bucket]+=value.length;for(const row of value){const t=ticket(row,name,project,bucket);if(t)tickets.push(t)}}else{const n=safeCount(value);if(n!==null)counts[bucket]+=n;else if(value&&typeof value==='object'&&safeCount(value.count)!==null)counts[bucket]+=value.count}}entries.push({name:name.slice(0,120),project:project.slice(0,40),counts,tickets})}}}
 if(!entries.length)throw Error('No supported QA entries found. Check the README for JSON formats.');
 const sourceDate=raw.capturedAt||raw.generatedAt||report.capturedAt||report.generatedAt;const capturedAt=typeof sourceDate==='string'&&!isNaN(Date.parse(sourceDate))?sourceDate:new Date().toISOString();return {entries,history:[],capturedAt,mode:'imported'}}
-const toolDownloads=import.meta.env.VITE_QA_TOOL_DOWNLOADS ? (()=>{try{return JSON.parse(import.meta.env.VITE_QA_TOOL_DOWNLOADS)}catch{return {}}})() : {};
+const toolDownloads={
+ pdp:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-pdp-content-comparator-0.3.2-fix1-x64.exe',
+ pictures:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-pictures-fonts-comparator-1.0.4-x64.exe',
+ links:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-links-cta-validator-1.0.4-x64.exe',
+ performance:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-performance-accessibility-forms-1.2.6-x64.exe'
+};
 const toolsCatalog=[
  {id:'pdp',title:'PDP Content Comparator',version:'0.3.2-fix1',description:'Compare DOCX/PDF source content with live PDP pages.'},
  {id:'pictures',title:'Pictures & Fonts Comparator',version:'1.0.4',description:'Check image size, ALT text and expected fonts.'},
