@@ -5,3 +5,5 @@ test('rejects missing timestamp',()=>{const x=input();delete x.capturedAt;assert
 test('rejects unknown count/status',()=>{const x=input();x.entries[0].counts.admin=1;assert.throws(()=>sanitize(x))});
 test('rejects invalid issue key',()=>{const x=input();x.entries[0].tickets[0].key='bad';assert.throws(()=>sanitize(x))});
 test('rejects absent tickets array',()=>{const x=input();delete x.entries[0].tickets;assert.throws(()=>sanitize(x))});
+
+test('preserves issue with missing updated date without inventing timestamp',()=>{const x=input();x.entries[0].tickets[0].updated='';const result=sanitize(x);assert.equal(result.entries[0].tickets[0].updated,null);assert.equal(result.entries[0].tickets[0].key,'EPM-1');assert.equal(result.entries[0].counts.qa,1)});
