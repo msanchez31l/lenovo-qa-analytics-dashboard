@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         working-directory: lenovo-qa-analytics
         run: npm install --no-audit --no-fund
+      - name: Verify sanitizer
+        working-directory: lenovo-qa-analytics
+        run: node --test scripts/sanitize-public-report.test.mjs
       - name: Build site
         working-directory: lenovo-qa-analytics
         run: npm run build
