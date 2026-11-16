@@ -27,8 +27,9 @@ export function updateHistory(previous,report){
   snapshots.push({capturedAt:timestamp,entries});
  }
  snapshots.sort((a,b)=>a.capturedAt.localeCompare(b.capturedAt));
- const cutoff=new Date(Date.parse(timestamp)-maxDays*86400000).toISOString();
- const kept=snapshots.filter(s=>s.capturedAt>=cutoff&&s.capturedAt<=timestamp);
+ const latest=snapshots[snapshots.length-1].capturedAt;
+ const cutoff=new Date(Date.parse(latest)-maxDays*86400000).toISOString();
+ const kept=snapshots.filter(s=>s.capturedAt>=cutoff&&s.capturedAt<=latest);
  if(kept.length>300)throw Error('Too many historical snapshots');
  return {schemaVersion:1,snapshots:kept};
 }
