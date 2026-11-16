@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-16T09:00:34.999Z",
+  "capturedAt": "2026-11-16T16:46:25.136Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -2099,14 +2099,35 @@
       "name": "Ayula Yadav",
       "project": "DXGWP",
       "counts": {
-        "qa": 2,
+        "qa": 5,
         "review": 24,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
-        "closed": 234
+        "closed": 236
       },
       "tickets": [
+        {
+          "key": "DXGWP-22658",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22656",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22661",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-20412",
           "owner": "Ayula Yadav",
@@ -2122,14 +2143,14 @@
           "updated": null
         },
         {
-          "key": "DXGWP-22218",
+          "key": "DXGWP-22219",
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "Review",
           "updated": null
         },
         {
-          "key": "DXGWP-22598",
+          "key": "DXGWP-22218",
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "Review",
@@ -2287,6 +2308,20 @@
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-21429",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "Closed",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-21410",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "Closed",
           "updated": null
         },
         {
@@ -3933,14 +3968,21 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 5,
-        "review": 19,
+        "qa": 3,
+        "review": 21,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
-        "closed": 116
+        "closed": 118
       },
       "tickets": [
+        {
+          "key": "DXGWP-22617",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-22613",
           "owner": "Naga Chitturi",
@@ -3956,24 +3998,17 @@
           "updated": null
         },
         {
-          "key": "DXGWP-22611",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
           "key": "DXGWP-22607",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
-          "status": "QA",
+          "status": "Review",
           "updated": null
         },
         {
           "key": "DXGWP-20443",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
-          "status": "QA",
+          "status": "Review",
           "updated": null
         },
         {
@@ -4107,6 +4142,20 @@
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22611",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "Closed",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-21422",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "Closed",
           "updated": null
         },
         {
