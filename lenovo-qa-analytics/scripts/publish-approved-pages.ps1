@@ -31,7 +31,7 @@ git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) { Write-Host 'No report changes'; exit 0 }
 if ($LASTEXITCODE -ne 1) { throw 'git diff failed' }
 $staged=@(git diff --cached --name-only)
-if (@($staged | Where-Object { $_ -ne $reportPath }).Count -gt 0) { throw 'Unexpected staged change' }
+if (@($staged | Where-Object { $_ -notin @($reportPath,$historyPath) }).Count -gt 0) { throw 'Unexpected staged change' }
 git commit -m 'data: publish approved QA snapshot and aggregate history'
 if ($LASTEXITCODE -ne 0) { throw 'Commit failed' }
 git push origin main
