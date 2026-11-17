@@ -3,13 +3,28 @@ param(
  [switch]$Publish
 )
 $ErrorActionPreference = 'Stop'
-& (Join-Path $PSScriptRoot 'prepare-public-report.ps1') -ProjectPath $ProjectPath
-if (!$Publish) { Write-Host 'DRY RUN: nothing pushed to GitHub. To publish after review, use -Publish.'; exit 0 }
+if (!$Publish) {
+ & (Join-Path $PSScriptRoot 'prepare-public-report.ps1') -ProjectPath $ProjectPath
+ Write-Host 'DRY RUN: nothing pushed to GitHub. To publish after review, use -Publish.'
+ exit 0
+}
 if ($env:QA_PUBLICATION_APPROVED -ne 'YES') { throw 'Set QA_PUBLICATION_APPROVED=YES only after verifying the approved dataset.' }
 $repo=(Resolve-Path (Join-Path $ProjectPath '..')).Path
 Set-Location $repo
 $branch=(git branch --show-current).Trim()
-if ($branch -ne 'main') { throw "Publishing requires local main branch; currently $branch" }
+if ($LASTEXITCODE -ne 0 -or $branch -ne 'main') { throw "Publishing requires local main branch; currently $branch" }
+# Synchronize before preparing report/history, never after creating a data commit.
+$beforeSync=@(git status --porcelain --untracked-files=all)
+if ($LASTEXITCODE -ne 0) { throw 'git status failed before synchronization' }
+if (@($beforeSync | Where-Object { $_ }).Count -gt 0) {
+ throw ('Local changes before synchronization; refusing to overwrite: ' + ($beforeSync -join '; '))
+}
+git fetch origin main
+if ($LASTEXITCODE -ne 0) { throw 'git fetch failed; no publication' }
+git merge --ff-only origin/main
+if ($LASTEXITCODE -ne 0) { throw 'Cannot fast-forward local main; resolve divergence before publishing' }
+Write-Host 'Local main synchronized with origin/main.'
+& (Join-Path $PSScriptRoot 'prepare-public-report.ps1') -ProjectPath $ProjectPath
 $reportPath='lenovo-qa-analytics/public/data/approved-report.json'
 $historyPath='lenovo-qa-analytics/public/data/history.json'
 $historyScript=Join-Path $ProjectPath 'scripts\update-history.mjs'
