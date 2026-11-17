@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-17T09:00:36.002Z",
+  "capturedAt": "2026-11-17T15:00:30.753Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -2099,21 +2099,14 @@
       "name": "Ayula Yadav",
       "project": "DXGWP",
       "counts": {
-        "qa": 3,
-        "review": 27,
+        "qa": 2,
+        "review": 28,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
         "closed": 236
       },
       "tickets": [
-        {
-          "key": "DXGWP-22598",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
         {
           "key": "DXGWP-22656",
           "owner": "Ayula Yadav",
@@ -2126,6 +2119,13 @@
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "QA",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22598",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "Review",
           "updated": null
         },
         {
@@ -3975,7 +3975,7 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 6,
+        "qa": 4,
         "review": 21,
         "inProgress": 0,
         "toDo": 0,
@@ -3984,14 +3984,7 @@
       },
       "tickets": [
         {
-          "key": "DXGWP-22978",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22974",
+          "key": "DXGWP-22613",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "QA",
@@ -4013,13 +4006,6 @@
         },
         {
           "key": "DXGWP-22617",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22613",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "QA",
