@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-18T09:44:28.524Z",
+  "capturedAt": "2026-11-18T15:00:34.611Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -840,13 +840,20 @@
       "project": "AGWP",
       "counts": {
         "qa": 0,
-        "review": 3,
+        "review": 4,
         "inProgress": 0,
         "toDo": 1,
         "done": 25,
         "closed": 0
       },
       "tickets": [
+        {
+          "key": "AGWP-1723",
+          "owner": "Martin Sanchez",
+          "project": "AGWP",
+          "status": "Review",
+          "updated": null
+        },
         {
           "key": "AGWP-1332",
           "owner": "Martin Sanchez",
@@ -869,7 +876,7 @@
           "updated": null
         },
         {
-          "key": "AGWP-1723",
+          "key": "AGWP-1995",
           "owner": "Martin Sanchez",
           "project": "AGWP",
           "status": "To Do",
@@ -1358,25 +1365,25 @@
       "project": "EPM",
       "counts": {
         "qa": 0,
-        "review": 1,
+        "review": 0,
         "inProgress": 1,
         "toDo": 0,
-        "done": 72,
+        "done": 73,
         "closed": 0
       },
       "tickets": [
-        {
-          "key": "EPM-45992",
-          "owner": "Joaquin Mano",
-          "project": "EPM",
-          "status": "Review",
-          "updated": null
-        },
         {
           "key": "EPM-43179",
           "owner": "Joaquin Mano",
           "project": "EPM",
           "status": "In Progress",
+          "updated": null
+        },
+        {
+          "key": "EPM-45992",
+          "owner": "Joaquin Mano",
+          "project": "EPM",
+          "status": "Done",
           "updated": null
         },
         {
@@ -1890,10 +1897,10 @@
       "project": "AGWP",
       "counts": {
         "qa": 0,
-        "review": 5,
+        "review": 0,
         "inProgress": 0,
-        "toDo": 0,
-        "done": 24,
+        "toDo": 1,
+        "done": 28,
         "closed": 0
       },
       "tickets": [
@@ -1901,35 +1908,35 @@
           "key": "AGWP-1944",
           "owner": "Joaquin Mano",
           "project": "AGWP",
-          "status": "Review",
+          "status": "To Do",
           "updated": null
         },
         {
           "key": "AGWP-1713",
           "owner": "Joaquin Mano",
           "project": "AGWP",
-          "status": "Review",
+          "status": "Done",
           "updated": null
         },
         {
           "key": "AGWP-1464",
           "owner": "Joaquin Mano",
           "project": "AGWP",
-          "status": "Review",
+          "status": "Done",
           "updated": null
         },
         {
           "key": "AGWP-1458",
           "owner": "Joaquin Mano",
           "project": "AGWP",
-          "status": "Review",
+          "status": "Done",
           "updated": null
         },
         {
           "key": "AGWP-1379",
           "owner": "Joaquin Mano",
           "project": "AGWP",
-          "status": "Review",
+          "status": "Done",
           "updated": null
         },
         {
@@ -2106,7 +2113,7 @@
       "name": "Ayula Yadav",
       "project": "DXGWP",
       "counts": {
-        "qa": 0,
+        "qa": 3,
         "review": 29,
         "inProgress": 0,
         "toDo": 0,
@@ -2114,6 +2121,27 @@
         "closed": 236
       },
       "tickets": [
+        {
+          "key": "DXGWP-22659",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22661",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22656",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-22973",
           "owner": "Ayula Yadav",
@@ -3975,8 +4003,8 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 4,
-        "review": 23,
+        "qa": 3,
+        "review": 25,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
@@ -3984,7 +4012,7 @@
       },
       "tickets": [
         {
-          "key": "DXGWP-22978",
+          "key": "DXGWP-22615",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "QA",
@@ -4005,10 +4033,31 @@
           "updated": null
         },
         {
+          "key": "DXGWP-20597",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-18468",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22978",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "Review",
+          "updated": null
+        },
+        {
           "key": "DXGWP-22613",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
-          "status": "QA",
+          "status": "Review",
           "updated": null
         },
         {
@@ -4055,20 +4104,6 @@
         },
         {
           "key": "DXGWP-21465",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-18468",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-20597",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "Review",
