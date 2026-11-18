@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-18T15:00:34.611Z",
+  "capturedAt": "2026-11-18T21:00:31.062Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -380,11 +380,25 @@
         "qa": 0,
         "review": 0,
         "inProgress": 0,
-        "toDo": 0,
+        "toDo": 2,
         "done": 64,
         "closed": 0
       },
       "tickets": [
+        {
+          "key": "EPM-45068",
+          "owner": "Martin Sanchez",
+          "project": "EPM",
+          "status": "To Do",
+          "updated": null
+        },
+        {
+          "key": "EPM-45077",
+          "owner": "Martin Sanchez",
+          "project": "EPM",
+          "status": "To Do",
+          "updated": null
+        },
         {
           "key": "EPM-45416",
           "owner": "Martin Sanchez",
@@ -840,20 +854,13 @@
       "project": "AGWP",
       "counts": {
         "qa": 0,
-        "review": 4,
+        "review": 3,
         "inProgress": 0,
         "toDo": 1,
-        "done": 25,
+        "done": 26,
         "closed": 0
       },
       "tickets": [
-        {
-          "key": "AGWP-1723",
-          "owner": "Martin Sanchez",
-          "project": "AGWP",
-          "status": "Review",
-          "updated": null
-        },
         {
           "key": "AGWP-1332",
           "owner": "Martin Sanchez",
@@ -880,6 +887,13 @@
           "owner": "Martin Sanchez",
           "project": "AGWP",
           "status": "To Do",
+          "updated": null
+        },
+        {
+          "key": "AGWP-1723",
+          "owner": "Martin Sanchez",
+          "project": "AGWP",
+          "status": "Done",
           "updated": null
         },
         {
@@ -1365,13 +1379,20 @@
       "project": "EPM",
       "counts": {
         "qa": 0,
-        "review": 0,
+        "review": 1,
         "inProgress": 1,
         "toDo": 0,
         "done": 73,
         "closed": 0
       },
       "tickets": [
+        {
+          "key": "EPM-46199",
+          "owner": "Joaquin Mano",
+          "project": "EPM",
+          "status": "Review",
+          "updated": null
+        },
         {
           "key": "EPM-43179",
           "owner": "Joaquin Mano",
@@ -4003,7 +4024,7 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 3,
+        "qa": 4,
         "review": 25,
         "inProgress": 0,
         "toDo": 0,
@@ -4011,6 +4032,13 @@
         "closed": 118
       },
       "tickets": [
+        {
+          "key": "DXGWP-22612",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-22615",
           "owner": "Naga Chitturi",
