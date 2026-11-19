@@ -20,7 +20,7 @@ else {for(const [name,prjs] of Object.entries(report)){if(['capturedAt','generat
 if(!entries.length)throw Error('No supported QA entries found. Check the README for JSON formats.');
 const sourceDate=raw.capturedAt||raw.generatedAt||report.capturedAt||report.generatedAt;const capturedAt=typeof sourceDate==='string'&&!isNaN(Date.parse(sourceDate))?sourceDate:new Date().toISOString();return {entries,history:[],capturedAt,mode:'imported'}}
 const toolDownloads={
- pdp:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-pdp-content-comparator-0.3.2-fix1-x64.exe',
+ pdp:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/Lenovo-PDP-Content-Comparator-0.3.2-fix1-NEW-x64.exe',
  pictures:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-pictures-fonts-comparator-1.0.4-x64.exe',
  links:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-links-cta-validator-1.0.4-x64.exe',
  performance:'https://github.com/msanchez31l/lenovo-qa-analytics-dashboard/releases/download/qa-tools-2026-11-15/lenovo-performance-accessibility-forms-1.2.6-x64.exe'
