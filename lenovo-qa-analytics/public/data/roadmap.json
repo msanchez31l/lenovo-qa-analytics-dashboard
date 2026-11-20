@@ -1,6 +1,6 @@
 {
   "source": "Migration Global Manual QA Check to Automated desktop tools.xlsx",
-  "updatedAt": "2026-11-20T11:27:50.875217+00:00",
+  "updatedAt": "2026-11-20T12:26:00.000Z",
   "checks": [
     {
       "area": "Design & UI",
@@ -39,8 +39,8 @@
       "category": "Visual Consistency",
       "check": "Icon style consistency",
       "method": "Manual",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Design & UI",
@@ -55,40 +55,40 @@
       "category": "Responsiveness/Mobile Compatibility",
       "check": "Responsive design",
       "method": "BrowserStack",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Design & UI",
       "category": "Responsiveness/Mobile Compatibility",
       "check": "Touch interactions",
       "method": "BrowserStack",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Design & UI",
       "category": "Responsiveness/Mobile Compatibility",
       "check": "Navigation on small devices",
       "method": "BrowserStack",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Design & UI",
       "category": "Responsiveness/Mobile Compatibility",
       "check": "Media scalability",
       "method": "BrowserStack",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Design & UI",
       "category": "Responsiveness/Mobile Compatibility",
       "check": "Modal & pop-up functionality",
       "method": "BrowserStack",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Design & UI",
@@ -167,8 +167,8 @@
       "category": "Navigation and Links",
       "check": "Menu functionality",
       "method": "Manual",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "Functional",
@@ -287,48 +287,48 @@
       "category": "SEO/Metadata",
       "check": "Meta tags",
       "method": "Chili Testers",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "SEO & Content",
       "category": "SEO/Metadata",
       "check": "Keyword optimization",
       "method": "Chili Testers",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "SEO & Content",
       "category": "SEO/Metadata",
       "check": "SEO-friendly URLs",
       "method": "Chili Testers",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "SEO & Content",
       "category": "SEO/Metadata",
       "check": "Preview image",
       "method": "Chili Testers",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "SEO & Content",
       "category": "SEO/Metadata",
       "check": "Platform ID",
       "method": "Chili Testers",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "SEO & Content",
       "category": "SEO/Metadata",
       "check": "Taxonomy / Sub-Taxonomy",
       "method": "Chili Testers",
-      "status": "PENDING",
-      "tool": "IN PRGORESS"
+      "status": "AUTOMATED",
+      "tool": "Lenovo-SEO-Responsive-Validator"
     },
     {
       "area": "SEO & Content",
