@@ -1,0 +1,734 @@
+{
+  "source": "Migration Global Manual QA Check to Automated desktop tools.xlsx",
+  "updatedAt": "2026-11-20T11:27:50.875217+00:00",
+  "checks": [
+    {
+      "area": "Design & UI",
+      "category": "Fonts",
+      "check": "Fonts Rules Design Verification (Lato, Noto, Monserrat)",
+      "method": "Fonts Ninja",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Pictures-Fonts-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "PDP Full Comparision",
+      "check": "Authors Copy Doc vs Figma vs Author/Preview Link",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Visual Consistency",
+      "check": "Layout Alignment",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Visual Consistency",
+      "check": "Image size < 300kbps",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Pictures-Fonts-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Visual Consistency",
+      "check": "Icon style consistency",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Visual Consistency",
+      "check": "Image naming",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Pictures-Fonts-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Responsiveness/Mobile Compatibility",
+      "check": "Responsive design",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Responsiveness/Mobile Compatibility",
+      "check": "Touch interactions",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Responsiveness/Mobile Compatibility",
+      "check": "Navigation on small devices",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Responsiveness/Mobile Compatibility",
+      "check": "Media scalability",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Responsiveness/Mobile Compatibility",
+      "check": "Modal & pop-up functionality",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Accessibiity",
+      "check": "Color contrast",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Accessibiity",
+      "check": "Text alternatives",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Accessibiity",
+      "check": "Keyboard navigation",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Accessibiity",
+      "check": "Screen reader compatibility",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Accessibiity",
+      "check": "Accessible forms",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Design & UI",
+      "category": "Accessibiity",
+      "check": "Link accessibility",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Links-CTA-Inspector"
+    },
+    {
+      "area": "Functional",
+      "category": "Navigation and Links",
+      "check": "Internal link verification",
+      "method": "Chili Testers",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Links-CTA-Inspector"
+    },
+    {
+      "area": "Functional",
+      "category": "Navigation and Links",
+      "check": "External link verification",
+      "method": "Chili Testers",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Links-CTA-Inspector"
+    },
+    {
+      "area": "Functional",
+      "category": "Navigation and Links",
+      "check": "Masthead menu navigation position (navposkey)",
+      "method": "Chili Testers",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Links-CTA-Inspector"
+    },
+    {
+      "area": "Functional",
+      "category": "Navigation and Links",
+      "check": "Menu functionality",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Functional",
+      "category": "Navigation and Links",
+      "check": "Breadcrumbs",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Navigation and Links",
+      "check": "CTA button responses",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Links-CTA-Inspector"
+    },
+    {
+      "area": "Functional",
+      "category": "Forms & Input Fields",
+      "check": "Marketo ID",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Forms & Input Fields",
+      "check": "Lead source code",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Forms & Input Fields",
+      "check": "Form submission",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Forms & Input Fields",
+      "check": "Field validation",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Forms & Input Fields",
+      "check": "Error message accuracy",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Forms & Input Fields",
+      "check": "Security measures",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Functional",
+      "category": "Content Management",
+      "check": "Dynamic content loading",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Functional",
+      "category": "Content Management",
+      "check": "Search/filter functionality",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Functional",
+      "category": "Content Management",
+      "check": "User interaction scripts",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Performance",
+      "category": "Performance Optimization",
+      "check": "Page load times",
+      "method": "Lighthouse",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Performance",
+      "category": "Performance Optimization",
+      "check": "Cumulative Layout Shift",
+      "method": "Lighthouse",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "Performance",
+      "category": "Performance Optimization",
+      "check": "Interaction to Next Paint",
+      "method": "Lighthouse",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Perf-Accesibility-Forms-Comparator"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "SEO/Metadata",
+      "check": "Meta tags",
+      "method": "Chili Testers",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "SEO/Metadata",
+      "check": "Keyword optimization",
+      "method": "Chili Testers",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "SEO/Metadata",
+      "check": "SEO-friendly URLs",
+      "method": "Chili Testers",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "SEO/Metadata",
+      "check": "Preview image",
+      "method": "Chili Testers",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "SEO/Metadata",
+      "check": "Platform ID",
+      "method": "Chili Testers",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "SEO/Metadata",
+      "check": "Taxonomy / Sub-Taxonomy",
+      "method": "Chili Testers",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Content Review",
+      "check": "Spelling and grammar",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Content Review",
+      "check": "Terms",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Content Review",
+      "check": "Typography",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Content Review",
+      "check": "Multimedia optimization",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-Pictures-Fonts-Comparator"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Content Review",
+      "check": "Content accuracy",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Brand Compliance",
+      "check": "Logos & wordmarks",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Brand Compliance",
+      "check": "Brand colors",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Brand Compliance",
+      "check": "Brand patterns",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Brand Compliance",
+      "check": "Imagery",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Brand Compliance",
+      "check": "Illustration",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Brand Compliance",
+      "check": "Iconography",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Legal Compliance",
+      "check": "Copyright  notices",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Legal Compliance",
+      "check": "Privacy policy and terms of services",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "SEO & Content",
+      "category": "Legal Compliance",
+      "check": "Compliance with data protection laws",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Cross-Browser Testing",
+      "check": "Functionality checks",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Cross-Browser Testing",
+      "check": "Rendering consistency",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Cross-Browser Testing",
+      "check": "Responsive testing",
+      "method": "BrowserStack",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Third-Party Integrations",
+      "check": "Service connectivity",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Third-Party Integrations",
+      "check": "Data handling",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Third-Party Integrations",
+      "check": "Functional validations",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Email & Notification Systems",
+      "check": "Trigger accuracy",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Email & Notification Systems",
+      "check": "Content verification",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Integration & Compatibility",
+      "category": "Email & Notification Systems",
+      "check": "Format and design",
+      "method": "Axe",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Under PMI, ensure \"For Compatibility\" is selected as \"Yes\"",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Adheres to Microsoft requirements",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Hero: Correct series page is listed in the breadcrumbs",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Hero: No line lists are triggered from the series description",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Hero: Correct processor badge is showing in the top-right of page",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Hero: Hero image has a purple glow beneath the device (Aura Edition only)",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Hero: Product Tour Video (“PTV”) added to the gallery, if available",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Hero: 360/AR asset is added to the gallery",
+      "method": "Manual",
+      "status": "PENDING",
+      "tool": "IN PRGORESS"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Image disclaimer is added in parentheses for any AI-generated image",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Image disclaimer is added for any images showing items sold separately",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: All feature eyebrow text throughout the page is in ALL CAPS",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Copy is using the correct text-alignment",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Sustainability blade is present",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Sustainability blade titles are in the correct order",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Standard ThinkShield Security blade is present (ThinkPads only)",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Features: Standard MIL-SPEC blade is present (ThinkPads only)",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Tech Specs: Graphics section shown as “Intel® Arc™ graphics” instead of “Xe2”",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Tech Specs: Memory section shown as “MT/s” instead of “MHz”",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Tech Specs: Correct USB naming used in both the tech specs and ports image labels",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Tech Specs: FSC statement present in “Material” section (ThinkPads only)",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Ports/Slots: Ports image is correctly labeled",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Services: Services section promoting the correct support option",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Services: Consumer pages = Premier Support Plus",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "Services: Commercial pages = Premium Care Plus",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "FAQs: 5 FAQs are added to the bottom of the page",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "FAQs: FAQ section does not have a title",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    },
+    {
+      "area": "Specialty",
+      "category": "Subseries/PDP",
+      "check": "FAQs: No specs mentioned in the FAQ section",
+      "method": "Manual",
+      "status": "AUTOMATED",
+      "tool": "Lenovo-PDP-Comparator"
+    }
+  ]
+}
