@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-20T15:00:30.308Z",
+  "capturedAt": "2026-11-20T21:00:40.398Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -1869,7 +1869,7 @@
       "project": "AGWP",
       "counts": {
         "qa": 0,
-        "review": 0,
+        "review": 1,
         "inProgress": 1,
         "toDo": 1,
         "done": 28,
@@ -1878,6 +1878,13 @@
       "tickets": [
         {
           "key": "AGWP-1957",
+          "owner": "Joaquin Mano",
+          "project": "AGWP",
+          "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "AGWP-1213",
           "owner": "Joaquin Mano",
           "project": "AGWP",
           "status": "In Progress",
@@ -2092,14 +2099,21 @@
       "name": "Ayula Yadav",
       "project": "DXGWP",
       "counts": {
-        "qa": 6,
-        "review": 16,
+        "qa": 7,
+        "review": 14,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
         "closed": 240
       },
       "tickets": [
+        {
+          "key": "DXGWP-22659",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-20418",
           "owner": "Ayula Yadav",
@@ -2143,35 +2157,21 @@
           "updated": null
         },
         {
+          "key": "DXGWP-22661",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-22656",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "Review",
+          "updated": null
+        },
+        {
           "key": "DXGWP-22658",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22975",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22216",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22973",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-21414",
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "Review",
@@ -3949,6 +3949,13 @@
       },
       "tickets": [
         {
+          "key": "DXGWP-23022",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
+        {
           "key": "DXGWP-22610",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
@@ -3957,13 +3964,6 @@
         },
         {
           "key": "DXGWP-23493",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-23022",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "QA",
