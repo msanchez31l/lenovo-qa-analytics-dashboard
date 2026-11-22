@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-20T21:00:40.398Z",
+  "capturedAt": "2026-11-22T09:00:36.246Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -11,7 +11,7 @@
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
-        "closed": 51
+        "closed": 50
       },
       "tickets": [
         {
@@ -358,13 +358,6 @@
           "updated": null
         },
         {
-          "key": "DXGWP-3070",
-          "owner": "Martin Sanchez",
-          "project": "DXGWP",
-          "status": "Closed",
-          "updated": null
-        },
-        {
           "key": "DXGWP-2938",
           "owner": "Martin Sanchez",
           "project": "DXGWP",
@@ -381,7 +374,7 @@
         "review": 0,
         "inProgress": 0,
         "toDo": 0,
-        "done": 61,
+        "done": 59,
         "closed": 0
       },
       "tickets": [
@@ -793,20 +786,6 @@
         },
         {
           "key": "EPM-43489",
-          "owner": "Martin Sanchez",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-42305",
-          "owner": "Martin Sanchez",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-42327",
           "owner": "Martin Sanchez",
           "project": "EPM",
           "status": "Done",
