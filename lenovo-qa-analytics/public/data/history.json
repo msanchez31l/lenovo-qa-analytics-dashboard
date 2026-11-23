@@ -2980,6 +2980,155 @@
           }
         }
       ]
+    },
+    {
+      "capturedAt": "2026-11-23T21:00:25.912Z",
+      "entries": [
+        {
+          "name": "Martin Sanchez",
+          "project": "DXGWP",
+          "counts": {
+            "qa": 0,
+            "review": 0,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 0,
+            "closed": 49
+          }
+        },
+        {
+          "name": "Martin Sanchez",
+          "project": "EPM",
+          "counts": {
+            "qa": 0,
+            "review": 0,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 56,
+            "closed": 0
+          }
+        },
+        {
+          "name": "Martin Sanchez",
+          "project": "AGWP",
+          "counts": {
+            "qa": 0,
+            "review": 2,
+            "inProgress": 0,
+            "toDo": 1,
+            "done": 28,
+            "closed": 0
+          }
+        },
+        {
+          "name": "Joaquin Mano",
+          "project": "DXGWP",
+          "counts": {
+            "qa": 0,
+            "review": 0,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 0,
+            "closed": 41
+          }
+        },
+        {
+          "name": "Joaquin Mano",
+          "project": "EPM",
+          "counts": {
+            "qa": 0,
+            "review": 0,
+            "inProgress": 1,
+            "toDo": 0,
+            "done": 72,
+            "closed": 0
+          }
+        },
+        {
+          "name": "Joaquin Mano",
+          "project": "AGWP",
+          "counts": {
+            "qa": 0,
+            "review": 1,
+            "inProgress": 1,
+            "toDo": 1,
+            "done": 28,
+            "closed": 0
+          }
+        },
+        {
+          "name": "Ayula Yadav",
+          "project": "DXGWP",
+          "counts": {
+            "qa": 6,
+            "review": 14,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 0,
+            "closed": 251
+          }
+        },
+        {
+          "name": "Naga Chitturi",
+          "project": "DXGWP",
+          "counts": {
+            "qa": 0,
+            "review": 24,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 0,
+            "closed": 129
+          }
+        },
+        {
+          "name": "Naga Chitturi",
+          "project": "AGWP",
+          "counts": {
+            "qa": 0,
+            "review": 0,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 0,
+            "closed": 1
+          }
+        },
+        {
+          "name": "Ayush Sharma",
+          "project": "DXGWP",
+          "counts": {
+            "qa": 0,
+            "review": 0,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 0,
+            "closed": 36
+          }
+        },
+        {
+          "name": "Ayush Sharma",
+          "project": "EPM",
+          "counts": {
+            "qa": 0,
+            "review": 3,
+            "inProgress": 0,
+            "toDo": 0,
+            "done": 24,
+            "closed": 0
+          }
+        },
+        {
+          "name": "Ayush Sharma",
+          "project": "AGWP",
+          "counts": {
+            "qa": 0,
+            "review": 4,
+            "inProgress": 0,
+            "toDo": 1,
+            "done": 14,
+            "closed": 1
+          }
+        }
+      ]
     }
   ]
 }
