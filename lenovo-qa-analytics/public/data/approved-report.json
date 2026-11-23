@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-22T21:00:29.326Z",
+  "capturedAt": "2026-11-23T09:00:35.953Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -11,7 +11,7 @@
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
-        "closed": 50
+        "closed": 49
       },
       "tickets": [
         {
@@ -356,13 +356,6 @@
           "project": "DXGWP",
           "status": "Closed",
           "updated": null
-        },
-        {
-          "key": "DXGWP-2938",
-          "owner": "Martin Sanchez",
-          "project": "DXGWP",
-          "status": "Closed",
-          "updated": null
         }
       ]
     },
@@ -374,7 +367,7 @@
         "review": 0,
         "inProgress": 0,
         "toDo": 0,
-        "done": 59,
+        "done": 56,
         "closed": 0
       },
       "tickets": [
@@ -765,27 +758,6 @@
         },
         {
           "key": "EPM-40450",
-          "owner": "Martin Sanchez",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-42314",
-          "owner": "Martin Sanchez",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-43464",
-          "owner": "Martin Sanchez",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-43489",
           "owner": "Martin Sanchez",
           "project": "EPM",
           "status": "Done",
@@ -2078,7 +2050,7 @@
       "name": "Ayula Yadav",
       "project": "DXGWP",
       "counts": {
-        "qa": 8,
+        "qa": 3,
         "review": 14,
         "inProgress": 0,
         "toDo": 0,
@@ -2086,6 +2058,13 @@
         "closed": 249
       },
       "tickets": [
+        {
+          "key": "DXGWP-22218",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-23763",
           "owner": "Ayula Yadav",
@@ -2095,48 +2074,6 @@
         },
         {
           "key": "DXGWP-22659",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-20418",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22218",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-21725",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-22516",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-21466",
-          "owner": "Ayula Yadav",
-          "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-20412",
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "QA",
@@ -3989,8 +3926,8 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 3,
-        "review": 20,
+        "qa": 0,
+        "review": 22,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
@@ -4001,21 +3938,14 @@
           "key": "DXGWP-23022",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
-          "status": "QA",
+          "status": "Review",
           "updated": null
         },
         {
           "key": "DXGWP-22610",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
-          "status": "QA",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-23493",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "QA",
+          "status": "Review",
           "updated": null
         },
         {
