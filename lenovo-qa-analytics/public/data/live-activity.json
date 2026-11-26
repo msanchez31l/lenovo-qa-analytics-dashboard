@@ -2,6 +2,15 @@
   "schemaVersion": 1,
   "assignments": [
     {
+      "ticket": "AGWP-1841",
+      "project": "AGWP",
+      "engineer": "Martin Sanchez",
+      "date": "2026-11-26",
+      "assignedAt": "2026-11-27T03:13:56.053+0800",
+      "initialStatus": "To Do",
+      "statusAtDetection": "To Do"
+    },
+    {
       "ticket": "AGWP-2063",
       "project": "AGWP",
       "engineer": "Martin Sanchez",
@@ -29,15 +38,15 @@
       "statusAtDetection": "Done"
     }
   ],
-  "generatedAt": "2026-11-26T18:02:24.264Z",
-  "lastPollAt": "2026-11-26T18:02:24.264Z",
+  "generatedAt": "2026-11-26T19:14:06.023Z",
+  "lastPollAt": "2026-11-26T19:14:06.023Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "rows": [
     {
       "date": "2026-11-26",
       "project": "AGWP",
       "engineer": "Martin Sanchez",
-      "assignments": 2
+      "assignments": 3
     },
     {
       "date": "2026-11-26",
