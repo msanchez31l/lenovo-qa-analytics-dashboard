@@ -2,7 +2,7 @@ param([switch]$EnablePublication)
 $ErrorActionPreference='Stop'
 if (!$EnablePublication) { throw 'Explicit -EnablePublication required after reviewing and approving the public dataset' }
 $script=(Resolve-Path (Join-Path $PSScriptRoot 'run-scheduled-pages-publish.ps1')).Path
-foreach($time in @('06:15','12:15','18:15')){
+foreach($time in @('06:15','08:15','10:15','12:15','14:15','16:15','18:15')){
  $name='Lenovo QA Pages Publish '+$time.Replace(':','')
  $arg='-NoProfile -ExecutionPolicy Bypass -File "'+$script+'"'
  $action=New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $arg
