@@ -1,4 +1,4 @@
-﻿import { readFile, writeFile, rename, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, rename, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 
 const root = join(
@@ -22,6 +22,7 @@ if (!Array.isArray(state.events) ||
 const projects = new Set(['DXGWP', 'EPM', 'AGWP']);
 const seen = new Set();
 const groups = new Map();
+const assignments = [];
 
 const dateFormat = new Intl.DateTimeFormat('en-CA', {
   timeZone: 'America/Argentina/Buenos_Aires',
@@ -46,6 +47,7 @@ for (const event of state.events) {
   const project = event.key.split('-')[0];
 
   if (!projects.has(project)) continue;
+  if (!/^(DXGWP|EPM|AGWP)-[0-9]+$/.test(event.key) || typeof event.initialStatus !== 'string' || typeof event.currentStatus !== 'string') throw Error('Invalid ticket record');
 
   const parts = Object.fromEntries(
     dateFormat.formatToParts(
@@ -55,6 +57,7 @@ for (const event of state.events) {
 
   const date = `${parts.year}-${parts.month}-${parts.day}`;
   const engineer = event.user;
+  assignments.push({ticket:event.key, project, engineer, date, assignedAt:event.assignedAt, initialStatus:event.initialStatus, statusAtDetection:event.currentStatus});
   const key = JSON.stringify([date, project, engineer]);
 
   const row = groups.get(key) || {
@@ -70,7 +73,8 @@ for (const event of state.events) {
 
 const result = {
   schemaVersion: 1,
-  generatedAt: new Date().toISOString(),
+  assignments: assignments.sort((a,b)=>Date.parse(b.assignedAt)-Date.parse(a.assignedAt)),
+  generatedAt: new Date(state.cursor).toISOString(),
   lastPollAt: new Date(state.cursor).toISOString(),
   timezone: 'America/Argentina/Buenos_Aires',
   rows: [...groups.values()].sort(

@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Activity, RotateCcw, Upload } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -30,6 +30,7 @@ function validate(raw) {
     ) throw Error('Invalid activity record');
   }
 
+  if (raw.assignments !== undefined && (!Array.isArray(raw.assignments) || raw.assignments.some(a => !/^(DXGWP|EPM|AGWP)-[0-9]+$/.test(a.ticket) || !projects.includes(a.project) || typeof a.engineer !== 'string' || !Number.isFinite(Date.parse(a.assignedAt))))) throw Error('Invalid assignment details');
   return raw;
 }
 
@@ -117,6 +118,7 @@ export default function LiveActivity() {
     (!to || row.date <= to)
   ), [rows, project, engineer, from, to]);
 
+  const details = (data?.assignments || []).filter(row => (!project || row.project === project) && (!engineer || row.engineer === engineer) && (!from || row.date >= from) && (!to || row.date <= to));
   const today = dayInZone(new Date(clock));
 
   const total = list => list.reduce(
@@ -196,7 +198,7 @@ export default function LiveActivity() {
 
       <label className="button">
         <Upload size={15}/> Import activity
-        <input type="file" accept=".json"
+        <input type="file" accept=".json" style={{maxWidth:180}}
           aria-label="Import activity JSON"
           onChange={importFile}/>
       </label>
@@ -254,6 +256,13 @@ export default function LiveActivity() {
       )}
     </div>
 
+    <article className="panel">
+      <div className="panelHeading"><h3>Recent assignments</h3><span>{details.length} events</span></div>
+      <div className="tableWrap"><table><thead><tr><th>Ticket</th><th>Engineer</th><th>Assigned at</th><th>Initial status</th><th>Status at detection</th></tr></thead><tbody>
+      {details.map((a,i)=><tr key={i}><td><a href={'https://jira.xpaas.lenovo.com/browse/'+encodeURIComponent(a.ticket)} target="_blank" rel="noopener noreferrer">{a.ticket}</a></td><td>{a.engineer}</td><td>{new Date(a.assignedAt).toLocaleString()}</td><td>{a.initialStatus}</td><td>{a.statusAtDetection}</td></tr>)}
+      </tbody></table></div>
+      {!details.length && <p className="empty">{data ? 'No recorded assignment details match the filters.' : 'Waiting for an activity snapshot.'}</p>}
+    </article>
     <article className="panel">
       <div className="panelHeading">
         <h3>Daily activity breakdown</h3>

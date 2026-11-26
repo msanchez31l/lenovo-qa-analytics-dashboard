@@ -33,20 +33,28 @@ node --test $historyTest
 if ($LASTEXITCODE -ne 0) { throw 'History tests failed; no publication' }
 node $historyScript (Join-Path $repo $reportPath) (Join-Path $repo $historyPath)
 if ($LASTEXITCODE -ne 0) { throw 'History update failed; no publication' }
+$activityPath='lenovo-qa-analytics/public/data/live-activity.json'
+$allowed=@($reportPath,$historyPath)
+if ($env:QA_ACTIVITY_PUBLICATION_APPROVED -eq 'YES') {
+ node (Join-Path $ProjectPath 'scripts\prepare-live-activity.mjs')
+ if ($LASTEXITCODE -ne 0) { throw 'Activity generation failed' }
+ Copy-Item (Join-Path $env:LOCALAPPDATA 'LenovoQAStatusAgent\live-monitor\live-activity.json') (Join-Path $repo $activityPath) -Force
+ $allowed += $activityPath
+}
 $dirty=@(git status --porcelain --untracked-files=all)
 if ($LASTEXITCODE -ne 0) { throw 'git status failed' }
-$unexpected=@($dirty | Where-Object { $_ -and ($_.Length -lt 4 -or @($reportPath,$historyPath) -notcontains $_.Substring(3)) })
+$unexpected=@($dirty | Where-Object { $_ -and ($_.Length -lt 4 -or $allowed -notcontains $_.Substring(3)) })
 if ($unexpected.Count -gt 0) { throw ('Unexpected uncommitted files; stop before publishing: ' + ($unexpected -join '; ')) }
 $staged=@(git diff --cached --name-only)
 if ($LASTEXITCODE -ne 0) { throw 'git diff staged failed' }
-if (@($staged | Where-Object { $_ -notin @($reportPath,$historyPath) }).Count -gt 0) { throw 'Unexpected staged changes; stop before publishing' }
-git add -f -- $reportPath $historyPath
+if (@($staged | Where-Object { $_ -notin $allowed }).Count -gt 0) { throw 'Unexpected staged changes; stop before publishing' }
+git add -f -- $allowed
 if ($LASTEXITCODE -ne 0) { throw 'git add failed' }
 git diff --cached --quiet
-if ($LASTEXITCODE -eq 0) { Write-Host 'No report changes'; exit 0 }
+if ($LASTEXITCODE -eq 0) { git push origin main; if ($LASTEXITCODE -ne 0) { throw 'Push failed' }; Write-Host 'No report changes'; exit 0 }
 if ($LASTEXITCODE -ne 1) { throw 'git diff failed' }
 $staged=@(git diff --cached --name-only)
-if (@($staged | Where-Object { $_ -notin @($reportPath,$historyPath) }).Count -gt 0) { throw 'Unexpected staged change' }
+if (@($staged | Where-Object { $_ -notin $allowed }).Count -gt 0) { throw 'Unexpected staged change' }
 git commit -m 'data: publish approved QA snapshot and aggregate history'
 if ($LASTEXITCODE -ne 0) { throw 'Commit failed' }
 git push origin main
