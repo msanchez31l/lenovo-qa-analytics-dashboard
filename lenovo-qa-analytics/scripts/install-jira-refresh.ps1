@@ -1,4 +1,4 @@
-# Install 3 daily local QA Jira reporting jobs. Does not publish corporate data.
+# Install 7 daily local QA Jira reporting jobs. Does not publish corporate data.
 # Example: .\install-jira-refresh.ps1 -AgentPath "C:\code\lenovo-qa-status-agent"
 param([Parameter(Mandatory=$true)][string]$AgentPath)
 $ErrorActionPreference='Stop'
@@ -26,7 +26,7 @@ Move-Item -Force $temp $target
 '@
 Set-Content -Path $runner -Value $runnerContent -Encoding UTF8
 $argument='-NoProfile -ExecutionPolicy Bypass -File "'+$runner+'" -Agent "'+$agent+'" -Npm "'+$npm+'" -Node "'+$node+'" -Normalizer "'+$normalize+'" -Private "'+$private+'"'
-foreach($time in @('06:00','12:00','18:00')){
+foreach($time in @('06:00','08:00','10:00','12:00','14:00','16:00','18:00')){
  $action=New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $argument
  $trigger=New-ScheduledTaskTrigger -Daily -At $time
  $settings=New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Minutes 45)
