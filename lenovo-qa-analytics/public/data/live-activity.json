@@ -1,8 +1,49 @@
 {
   "schemaVersion": 1,
-  "assignments": [],
-  "generatedAt": "2026-11-26T17:14:06.257Z",
-  "lastPollAt": "2026-11-26T17:14:06.257Z",
+  "assignments": [
+    {
+      "ticket": "AGWP-2063",
+      "project": "AGWP",
+      "engineer": "Martin Sanchez",
+      "date": "2026-11-26",
+      "assignedAt": "2026-11-27T01:35:00.379+0800",
+      "initialStatus": "To Do",
+      "statusAtDetection": "To Do"
+    },
+    {
+      "ticket": "AGWP-1229",
+      "project": "AGWP",
+      "engineer": "Joaquin Mano",
+      "date": "2026-11-26",
+      "assignedAt": "2026-11-26T22:56:44.647+0800",
+      "initialStatus": "To Do",
+      "statusAtDetection": "To Do"
+    },
+    {
+      "ticket": "AGWP-2003",
+      "project": "AGWP",
+      "engineer": "Martin Sanchez",
+      "date": "2026-11-26",
+      "assignedAt": "2026-11-26T18:44:31.950+0800",
+      "initialStatus": "To Do",
+      "statusAtDetection": "Done"
+    }
+  ],
+  "generatedAt": "2026-11-26T18:02:24.264Z",
+  "lastPollAt": "2026-11-26T18:02:24.264Z",
   "timezone": "America/Argentina/Buenos_Aires",
-  "rows": []
+  "rows": [
+    {
+      "date": "2026-11-26",
+      "project": "AGWP",
+      "engineer": "Martin Sanchez",
+      "assignments": 2
+    },
+    {
+      "date": "2026-11-26",
+      "project": "AGWP",
+      "engineer": "Joaquin Mano",
+      "assignments": 1
+    }
+  ]
 }

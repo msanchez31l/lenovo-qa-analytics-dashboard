@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-26T17:00:25.340Z",
+  "capturedAt": "2026-11-26T18:02:56.965Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -765,7 +765,7 @@
         "qa": 0,
         "review": 3,
         "inProgress": 0,
-        "toDo": 0,
+        "toDo": 1,
         "done": 28,
         "closed": 0
       },
@@ -789,6 +789,13 @@
           "owner": "Martin Sanchez",
           "project": "AGWP",
           "status": "Review",
+          "updated": null
+        },
+        {
+          "key": "AGWP-2063",
+          "owner": "Martin Sanchez",
+          "project": "AGWP",
+          "status": "To Do",
           "updated": null
         },
         {
