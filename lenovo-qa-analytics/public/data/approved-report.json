@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-27T11:00:29.559Z",
+  "capturedAt": "2026-11-27T13:00:25.142Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -1807,8 +1807,8 @@
       "counts": {
         "qa": 0,
         "review": 0,
-        "inProgress": 0,
-        "toDo": 2,
+        "inProgress": 1,
+        "toDo": 1,
         "done": 30,
         "closed": 0
       },
@@ -1817,7 +1817,7 @@
           "key": "AGWP-1229",
           "owner": "Joaquin Mano",
           "project": "AGWP",
-          "status": "To Do",
+          "status": "In Progress",
           "updated": null
         },
         {
@@ -2044,7 +2044,7 @@
       "project": "DXGWP",
       "counts": {
         "qa": 1,
-        "review": 18,
+        "review": 19,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
@@ -2052,10 +2052,17 @@
       },
       "tickets": [
         {
-          "key": "DXGWP-24323",
+          "key": "DXGWP-24325",
           "owner": "Ayula Yadav",
           "project": "DXGWP",
           "status": "QA",
+          "updated": null
+        },
+        {
+          "key": "DXGWP-24323",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "Review",
           "updated": null
         },
         {
@@ -3989,7 +3996,7 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 2,
+        "qa": 3,
         "review": 14,
         "inProgress": 0,
         "toDo": 0,
@@ -3997,6 +4004,13 @@
         "closed": 134
       },
       "tickets": [
+        {
+          "key": "DXGWP-21462",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-21461",
           "owner": "Naga Chitturi",
@@ -5544,13 +5558,20 @@
       "project": "AGWP",
       "counts": {
         "qa": 0,
-        "review": 4,
+        "review": 5,
         "inProgress": 0,
-        "toDo": 2,
+        "toDo": 1,
         "done": 13,
         "closed": 1
       },
       "tickets": [
+        {
+          "key": "AGWP-1682",
+          "owner": "Ayush Sharma",
+          "project": "AGWP",
+          "status": "Review",
+          "updated": null
+        },
         {
           "key": "AGWP-1926",
           "owner": "Ayush Sharma",
@@ -5577,13 +5598,6 @@
           "owner": "Ayush Sharma",
           "project": "AGWP",
           "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "AGWP-1682",
-          "owner": "Ayush Sharma",
-          "project": "AGWP",
-          "status": "To Do",
           "updated": null
         },
         {
