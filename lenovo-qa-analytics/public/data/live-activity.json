@@ -2,6 +2,15 @@
   "schemaVersion": 1,
   "assignments": [
     {
+      "ticket": "AGWP-1682",
+      "project": "AGWP",
+      "engineer": "Ayush Sharma",
+      "date": "2026-11-27",
+      "assignedAt": "2026-11-27T12:59:26.393+0800",
+      "initialStatus": "To Do",
+      "statusAtDetection": "To Do"
+    },
+    {
       "ticket": "AGWP-1841",
       "project": "AGWP",
       "engineer": "Martin Sanchez",
@@ -38,10 +47,16 @@
       "statusAtDetection": "Done"
     }
   ],
-  "generatedAt": "2026-11-26T21:00:06.148Z",
-  "lastPollAt": "2026-11-26T21:00:06.148Z",
+  "generatedAt": "2026-11-27T09:00:11.545Z",
+  "lastPollAt": "2026-11-27T09:00:11.545Z",
   "timezone": "America/Argentina/Buenos_Aires",
   "rows": [
+    {
+      "date": "2026-11-27",
+      "project": "AGWP",
+      "engineer": "Ayush Sharma",
+      "assignments": 1
+    },
     {
       "date": "2026-11-26",
       "project": "AGWP",
