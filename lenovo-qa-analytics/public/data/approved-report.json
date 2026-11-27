@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-27T09:01:00.149Z",
+  "capturedAt": "2026-11-27T11:00:29.559Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -2043,7 +2043,7 @@
       "name": "Ayula Yadav",
       "project": "DXGWP",
       "counts": {
-        "qa": 0,
+        "qa": 1,
         "review": 18,
         "inProgress": 0,
         "toDo": 0,
@@ -2051,6 +2051,13 @@
         "closed": 257
       },
       "tickets": [
+        {
+          "key": "DXGWP-24323",
+          "owner": "Ayula Yadav",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-22660",
           "owner": "Ayula Yadav",
@@ -3982,7 +3989,7 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 1,
+        "qa": 2,
         "review": 14,
         "inProgress": 0,
         "toDo": 0,
@@ -3990,6 +3997,13 @@
         "closed": 134
       },
       "tickets": [
+        {
+          "key": "DXGWP-21461",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-20444",
           "owner": "Naga Chitturi",
