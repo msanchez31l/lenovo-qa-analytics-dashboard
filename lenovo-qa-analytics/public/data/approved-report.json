@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-27T15:00:26.062Z",
+  "capturedAt": "2026-11-27T17:00:24.065Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -3989,14 +3989,21 @@
       "name": "Naga Chitturi",
       "project": "DXGWP",
       "counts": {
-        "qa": 5,
-        "review": 14,
+        "qa": 6,
+        "review": 11,
         "inProgress": 0,
         "toDo": 0,
         "done": 0,
         "closed": 134
       },
       "tickets": [
+        {
+          "key": "DXGWP-21459",
+          "owner": "Naga Chitturi",
+          "project": "DXGWP",
+          "status": "QA",
+          "updated": null
+        },
         {
           "key": "DXGWP-21462",
           "owner": "Naga Chitturi",
@@ -4040,20 +4047,6 @@
           "updated": null
         },
         {
-          "key": "DXGWP-22663",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-23022",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
           "key": "DXGWP-22610",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
@@ -4083,13 +4076,6 @@
         },
         {
           "key": "DXGWP-22609",
-          "owner": "Naga Chitturi",
-          "project": "DXGWP",
-          "status": "Review",
-          "updated": null
-        },
-        {
-          "key": "DXGWP-23023",
           "owner": "Naga Chitturi",
           "project": "DXGWP",
           "status": "Review",
