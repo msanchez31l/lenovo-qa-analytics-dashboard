@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-11-27T21:00:24.913Z",
+  "capturedAt": "2026-11-28T09:00:26.761Z",
   "entries": [
     {
       "name": "Martin Sanchez",
@@ -1298,7 +1298,7 @@
         "review": 0,
         "inProgress": 0,
         "toDo": 0,
-        "done": 71,
+        "done": 69,
         "closed": 0
       },
       "tickets": [
@@ -1780,20 +1780,6 @@
         },
         {
           "key": "EPM-43216",
-          "owner": "Joaquin Mano",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-41544",
-          "owner": "Joaquin Mano",
-          "project": "EPM",
-          "status": "Done",
-          "updated": null
-        },
-        {
-          "key": "EPM-43627",
           "owner": "Joaquin Mano",
           "project": "EPM",
           "status": "Done",
